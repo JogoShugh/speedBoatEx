@@ -12,7 +12,7 @@
 * Nearly constant churn of Dave passing along *`a few tweaks`*, resulting in needing to rebaseline testing images
 * Lack of *`Clarity`* as to when is appropriate to be experimental with using new languages, such as Scala. However, while this did slow things down a bit, it also didn't get out of hand, because after the experimentation, we realized it was not the best approach for the near-term.
  * On balance, I'd rather "fail fast" through experiments like that, than feel like we should never try new languages.
-* Delaying the `Get stuff installed; Snapshot the image; Use it as the baseline` environment automation sweet spot for too long. We spent too long wishing and praying for the perfect world of downloading VersionOne and automating its installation from step 0, that every environment build took 30 to 45 minutes, even when failing, which was the worst.
+* Delaying the `Get stuff installed; Snapshot the image; Use it as the baseline` environment automation sweet spot for too long. We spent too long wishing and praying for the perfect world of downloading VersionOne via `Chef` and automating its installation from step 0, that every environment build took 30 to 45 minutes, even when failing, which was the worst.
  *  Instead, when we decided to be pragmatic about automation, we achieved 95% of the benefits with very little down side. As a side-benefit, we worked with Dan Gilkerson and Tom Hall about longer-term solutions for cloud V1 automation, [documented here](https://github.com/versionone/VersionOne.ChocolateyPackage/blob/master/DanGNotes.md#devops-notes).
  
 ## Winds and motors
